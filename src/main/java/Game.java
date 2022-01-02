@@ -30,7 +30,11 @@ public class Game {
 
     }
     public void run() {
-
+        try {
+            draw();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
